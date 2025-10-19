@@ -15,11 +15,11 @@ data class Post(
     val fromId: Int = 1,
     val createdBy: Int = 0,
     val date: Int = 0,
-    val text: String = "text",
+    val text: String? = "text",
     val replyOwnerId: Int = 1,
     val replyPostId: Int = 1,
     val friendsOnly: Boolean = false,
-    val copyright: String = "copyright",
+    val copyright: String? = "copyright",
     val comments: Comments = Comments()
 )
 
