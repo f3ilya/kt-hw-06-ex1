@@ -20,7 +20,8 @@ data class Post(
     val replyPostId: Int = 1,
     val friendsOnly: Boolean = false,
     val copyright: String? = "copyright",
-    val comments: Comments = Comments()
+    val comments: Comments = Comments(),
+    val attachment: Array<Attachment> = arrayOf(VideoAttachment(), AudioAttachment())
 )
 
 object WallService {
